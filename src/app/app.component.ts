@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,12 +7,21 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  navbarfixed:boolean = false;
-  @HostListener('window:scroll', ['$event']) onscroll(){
-    if(window.scrollY > 100){
-      this.navbarfixed = true; 
+  navbarfixed: boolean = false;
+  constructor(private router: Router) {}
+  @HostListener('window:scroll', ['$event']) onscroll() {
+    if (window.scrollY > 100) {
+      this.navbarfixed = true;
     } else {
       this.navbarfixed = false;
     }
+  }
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
   }
 }

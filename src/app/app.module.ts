@@ -7,6 +7,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { CounterComponent } from './homepage/counter/counter.component';
 import { AboutComponent } from './about/about.component';
 import { ValuesComponent } from './about/values/values.component';
+import { SubscribeComponent } from './subscribe/subscribe.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ValuesComponent } from './about/values/values.component';
     HomepageComponent,
     CounterComponent,
     AboutComponent,
-    ValuesComponent
+    ValuesComponent,
+    SubscribeComponent
   ],
   imports: [
     BrowserModule,
