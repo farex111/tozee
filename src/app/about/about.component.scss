@@ -1,0 +1,140 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.head {
+  padding: 100px 0;
+  background-color: #fff301;
+  .col-md-6 {
+    h3 {
+      font-size: 38px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    p:not(:nth-child(1)) {
+      padding: 20px 0;
+    }
+  }
+  .col-md-6:not(:nth-child(1)) {
+    background-color: black;
+    color: white;
+    padding: 70px;
+    position: relative;
+    article {
+      font-size: 24px;
+      line-height: 30px;
+      padding-bottom: 40px;
+    }
+    strong {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  .col-md-6:not(:nth-child(1))::before {
+    position: absolute;
+    content: "#";
+    top: -40px;
+    font-size: 70px;
+    color: #999999;
+    font-weight: bold;
+  }
+  .col-md-12 {
+    padding: 0;
+    position: relative;
+    padding-bottom: 500px;
+    padding-top: 90px;
+    img {
+      width: 100%;
+      padding: 0;
+      position: absolute;
+    }
+  }
+}
+.mission {
+  padding-top: 300px;
+  padding-bottom: 100px;
+  .col-lg-7 {
+    background-color: #fff301;
+    padding: 70px 250px 70px 70px;
+    h3 {
+      font-size: 38px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    p:not(:nth-child(1)) {
+      padding: 20px 0;
+    }
+  }
+  .col-lg-5 {
+    position: relative;
+    .vision {
+      background-color: black;
+      color: white;
+      padding: 70px;
+      position: absolute;
+      top: 50%;
+      left: -30%;
+      transform: translateY(-50%);
+      h3 {
+        font-size: 38px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 22px;
+        line-height: 30px;
+        padding: 20px 0;
+      }
+    }
+  }
+}
+.values {
+  .col-md-6 {
+    padding: 0;
+    h3 {
+      font-size: 38px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 24px;
+      line-height: 30px;
+      padding: 20px 0 40px 0;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .head {
+    .col-md-12 {
+      position: relative;
+      padding-bottom: 0;
+      img {
+        position: relative;
+      }
+    }
+  }
+  .mission {
+    padding: 100px 0;
+    .col-lg-7 {
+      padding: 70px;
+    }
+    .col-lg-5 {
+      position: relative;
+      padding: 0;
+      .vision {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .mission {
+    padding: 100px 0;
+  }
+}
