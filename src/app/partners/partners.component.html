@@ -1,0 +1,33 @@
+<header>
+  <div class="container">
+    <h1>certified partners</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis,
+      dolor facilis et, ea earum voluptatum inventore repellendus nam labore
+      tenetur consequuntur eius voluptas, velit officia ipsam consequatur
+      debitis aspernatur! Maxime.
+    </p>
+  </div>
+</header>
+<section>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 mt-3 mb-3" *ngFor="let logo of logos">
+        <div class="card">
+          <img src="{{ logo.img }}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ logo.title }}</h5>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
+              unde perferendis non quae aperiam inventore eos sunt dolorem
+              architecto earum vero eum ipsam rem saepe facere maxime error,
+              neque iusto?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <app-subscribe></app-subscribe>
+

@@ -1,0 +1,30 @@
+header {
+  p {
+    max-width: 700px;
+  }
+}
+section {
+  padding: 100px 0 0 0;
+  .col-md-12{
+    text-align: center;
+    padding: 50px 0;
+    h4 {
+      font-size: 38px;
+      font-weight: bold;
+      padding-bottom: 60px;
+      color: black;
+    }
+    a {
+      border: 2px solid black;
+      color: black;
+      padding: 15px 30px;
+      font-size: 20px;
+      text-transform: capitalize;
+      transition: all 0.4s;
+    }
+    a:hover{
+      background-color: black;
+      color: white;
+    }
+  }
+}

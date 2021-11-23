@@ -1,0 +1,28 @@
+<header>
+  <div class="container">
+    <h1>blog</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis,
+      dolor facilis et, ea earum voluptatum inventore repellendus nam labore
+      tenetur consequuntur eius voluptas, velit officia ipsam consequatur
+      debitis aspernatur! Maxime.
+    </p>
+  </div>
+</header>
+<section>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 mt-3 mb-3" *ngFor="let post of blogposts">
+        <div class="card">
+          <img src="{{ post.urlToImage }}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <h6>{{ post.publishedAt }}</h6>
+            <p class="card-text">{{ post.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-subscribe></app-subscribe>

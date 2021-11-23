@@ -50,7 +50,40 @@ a {
 }
 * {
 	box-sizing: border-box;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 img {
     max-width: 100%;
+}
+header {
+	background-color: #fff301;
+  	padding: 100px 0;
+	h1 {
+		font-size: 38px;
+    	font-weight: bold;
+    	line-height: 40px;
+		text-transform: capitalize;
+	}
+	p {
+    	font-size: 24px;
+    	line-height: 30px;
+    	color: #403e1b;
+    	padding: 40px 0;
+  }
+}
+
+.p-accordion-header-link {
+	background-color: #fff301;
+	padding: 35px;
+	font-size: 30px;
+	color: black !important;
+	font-weight: bold;
+	margin-top: 30px;
+	text-decoration: none;
+}
+.p-accordion-content {
+	background-color: #ededed;
+	padding: 30px;
+	font-size: 22px;
+	line-height: 25px;
 }
