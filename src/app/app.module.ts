@@ -6,6 +6,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { ToastModule } from 'primeng/toast';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ButtonModule } from 'primeng/button';
+import { NgbCollapseModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -45,6 +46,8 @@ import { InstructionsComponent } from './instructions/instructions.component';
     ToastModule,
     BrowserAnimationsModule,
     ButtonModule,
+    NgbCollapseModule,
+    NgbModule,
   ],
   providers: [NewsapiserviceComponent],
   bootstrap: [AppComponent],

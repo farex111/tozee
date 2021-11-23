@@ -46,7 +46,7 @@ table {
 }
 
 a { 
-	text-decoration: none;
+	text-decoration: none !important;
 }
 * {
 	box-sizing: border-box;
@@ -70,6 +70,9 @@ header {
     	color: #403e1b;
     	padding: 40px 0;
   }
+}
+section {
+	padding: 50px 0;
 }
 
 .p-accordion-header-link {

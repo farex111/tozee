@@ -21,7 +21,7 @@
     </div>
   </div>
 </header>
-<section>
+<section class="corporates">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -109,7 +109,6 @@
         </div>
       </div>
       <div class="col-md-12 modernhouse">
-        
         <img
           src="../../assets/img/Modern+House+Exterior.jpg"
           alt=" architectural house exterior"
@@ -133,4 +132,55 @@
     </div>
   </div>
 </section>
+
+<section class="mission">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <h3>mission</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde odit,
+          voluptate optio itaque saepe ea ut porro amet doloribus eveniet
+          doloremque fuga, reprehenderit mollitia praesentium placeat, quo at
+          nesciunt eligendi!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+          aperiam assumenda asperiores quos animi laudantium fugit fugiat
+          impedit iure exercitationem ipsam quo. Eligendi alias sapiente cumque
+          consectetur sit neque deleniti.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <div class="vision">
+          <img src="../../assets/img/ceo.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h3>blog</h3>
+    <div class="row">
+      <div class="col-md-4 mt-3 mb-3" *ngFor="let post of blogposts">
+        <div class="card">
+          <img src="{{ post.urlToImage }}" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <h6>{{ post.publishedAt }}</h6>
+            <p class="card-text">{{ post.description }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 d-flex justify-content-center align-items-center">
+        <a [routerLink]="['/blog']" routerLinkActive="router-link-active"
+          >more posts</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
 <app-subscribe></app-subscribe>

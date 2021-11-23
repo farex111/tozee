@@ -8,7 +8,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class AppComponent {
   navbarfixed: boolean = false;
-  constructor(private router: Router,) {}
+  constructor(private router: Router) {}
   @HostListener('window:scroll', ['$event']) onscroll() {
     if (window.scrollY > 100) {
       this.navbarfixed = true;
@@ -16,6 +16,7 @@ export class AppComponent {
       this.navbarfixed = false;
     }
   }
+  isShown: boolean = false;
   ngOnInit() {
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
